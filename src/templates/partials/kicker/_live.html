@@ -1,0 +1,33 @@
+<div class="mb-sm">
+<span class="dot-xs-red relative mr-xs"></span>
+<span class="font--subhead hide-for-print kicker black font-bold pl-xs-ns pl-xs" data-qa="kicker">Biden inauguration live updates</span>
+</div>
+
+<style>
+@keyframes blinking-dot {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 10%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.dot-xs-red:before {
+    height: 10px !important;
+    width: 10px !important;
+    animation: blinking-dot 2s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 1024px) {
+    .dot-xs-red:before {
+        height: 7px !important;
+        width: 7px !important;
+        margin-top: 1px;
+    }
+}
+
+</style>

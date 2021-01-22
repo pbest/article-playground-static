@@ -1,0 +1,151 @@
+ <style type="text/css" id="powa-controls-overlay">
+.powa {
+    display: none !important;
+}
+.powa[data-show-title="false"] .ctrls-overlay-top{display:none;}.powa-custom-ctrls:not(.mobile):hover .powa-overlay{display:block;}.powa-custom-ctrls.mobile.active .powa-overlay,.powa-custom-ctrls.powa-pause .powa-overlay{display:block;}.ctrls-overlay-center{position:absolute;height:100%;width:100%;justify-content:center;align-items:center;display:flex;z-index:2;}.powa-sticky-stick.powa-sticky .powa-overlay-wrap .ctrls-overlay .ctrls-overlay-center{height:unset;bottom:calc(15px + 35%);z-index:100;}.powa-custom-ctrls .ctrls-overlay-center .powa-overlay-icon{font-size:45px;margin-top:4px;cursor:pointer;font-size:2.3em;}.ctrls-overlay-center .powa-overlay-icon{margin-left:40px;margin-right:40px;}.powa.xSmall .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-icon{width:4%;min-width:40px;margin:-24px calc(22px + 2%) 0 calc(26px + 2%);font-size:1.75em;line-height:0;text-align:center;}.powa-sticky-stick.powa-sticky .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-icon{width:10%;min-width:20px;font-size:1.75em;margin:0 calc(16px + 4%) 0 calc(20px + 4%);}.powa-sticky-stick.powa-sticky .powa-overlay-icon{width:10%;min-width:20px;font-size:2em;margin:0 calc(12px + 5%) 0 calc(16px + 5%)}.powa-custom-ctrls.mobile.active .powa-overlay-icon,.powa-custom-ctrls.powa-pause .powa-overlay-icon{display:block;}.powa-sticky .ctrls-overlay-top{display:none;}.ctrls-overlay-top{padding:15px 20px;font-size:16px;line-height:20px;text-shadow:none;text-align:left;}.powa.small .ctrls-overlay-top{font-size:16px;line-height:1.4;}.powa-overlay{width:100%;height:100%;position:absolute;color:white;display:none;background-image:linear-gradient(-180deg,rgba(0,0,0,0.70) 9%,rgba(0,0,0,0.25) 28%,rgba(0,0,0,0.25) 59%,rgba(0,0,0,0.70) 89%);}.powa-overlay-prev[data-display="ghost"],.powa-overlay-next[data-display="ghost"],.powa-overlay-ghost{visibility:hidden;}.powa-overlay-prev.fa,.powa-overlay-next.fa{margin-top:4px;font-size:32px;cursor:pointer;}.powa.xSmall .powa-overlay-prev,.powa.xSmall .powa-overlay-next{margin-top:0px;font-size:1.3em;}.powa.xSmall .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-next,.powa.xSmall .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-prev{margin-top:-24px;font-size:1.5em;}.powa-sticky-stick.powa-sticky .powa.xSmall .powa-overlay-next,.powa-sticky-stick.powa-sticky .powa.xSmall .powa-overlay-next{font-size:1.3em;}.powa-custom-ctrls .ctrls-overlay-center .powa-overlay-icon{width:4%;min-width:40px;margin:0 calc(22px + 2%) 0 calc(26px + 2%);font-size:2.5em;line-height:0;text-align:center;}.powa-sticky-stick.powa-sticky .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-next,.powa-sticky-stick.powa-sticky .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-prev{margin-top:0;font-size:1.6em;}.powa-sticky-stick.powa-sticky .powa-ctrls .powa-ctrls-top{padding:6px 8px;}.powa-sticky-stick.powa-sticky .powa-ctrls .powa-ctrls-top .powa-ctrls-progress-wrap{display:none;}.powa-sticky-stick.powa-sticky .powa-ctrls .powa-ctrls-top .powa-ctrls-item{line-height:32px;width:32px;}.powa.small .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-icon{margin-top:0;font-size:2.5em;}.powa.small .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-next,.powa.small .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-prev{margin-top:0;font-size:1.75em;}.powa.large .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-icon{margin-top:0;font-size:3em;}.powa.large .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-next,.powa.large .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-prev{margin-top:0;font-size:2em;}.powa-sticky-stick.powa-sticky .powa-custom-ctrls .ctrls-overlay-center .powa-overlay-icon{font-size:2em;}.powa-sticky-stick.powa-sticky .powa-overlay-wrap .ctrls-overlay .ctrls-overlay-center{bottom:calc(20px + 35%);}.powa-custom-ctrls .ctrls-overlay-center-svg{position:absolute;width:100%;height:100%;justify-content:center;align-items:center;display:flex;z-index:2;box-sizing:border-box;}.powa-custom-ctrls .ctrls-overlay-center-svg *{box-sizing:border-box;cursor:pointer;}.powa-custom-ctrls .ctrls-overlay-center-svg svg.powa-overlay-small{width:4%;min-width:25px;max-width:75px;}.powa-custom-ctrls .ctrls-overlay-center-svg svg.powa-overlay-big{margin:0 calc(22px + 2%) 0 calc(26px + 2%);width:8%;min-width:35px;max-width:100px;}.powa-overlay-hidden{display:none;}.powa-sticky-stick.powa-sticky .powa-overlay-wrap .ctrls-overlay .ctrls-overlay-center-svg{height:auto;bottom:calc(20px + 35%);}</style>
+      <style type="text/css" id="powa-wapo-reset">.powa video{text-shadow:none;background-color:black;position:absolute;top:0px;left:0px;width:100%;height:100%;}.powa video::cue{text-shadow:none;outline:none;text-decoration:none;font-family:FranklinITCProLight;}.powa.fullscreen video{width:100% !important;height:100% !important;}.powa.ad-playing video::-webkit-media-controls-panel{display:none !important;}.powa.ad-playing video::-webkit-media-controls-panel{display:none !important;}.powa.custom-controls video::-webkit-media-controls{display:none !important;}.powa.native-controls video::-webkit-media-controls{display:flex;}.powa svg{opacity:1;}.powa .powa-sell-bar-controls{line-height:normal;}</style>
+      <style type="text/css" id="wapo-powa-sub">.powa.wapo-ctrls .powa-sub{z-index:2;}.powa.wapo-ctrls .powa-ys{font-family:Franklin,"Helvetica Neue Light","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;}.powa.wapo-ctrls.ys-window-80 .powa-ys-window{transform:scale(0.8);}.powa.wapo-ctrls .powa-ys-show{pointer-events:auto !important;opacity:1 !important;background-color:rgba(0,0,0,0.2) !important;}.powa .powa-ys{pointer-events:none !important;}.powa-sticky-stick.powa-sticky .powa-ys,.powa-sticky-stick.powa-sticky .powa-ctrls-popup{display:none !important;}.powa-sticky-stick.powa-sticky .powa-ctrls-cc-inner-wrap:hover{background-color:transparent;}</style>
+      <style type="text/css" id="powa-wrapper-article-clearfix">.powa-wrapper{clear:both}</style>
+
+<div data-qa="lede-art"><figure class="pt-xs mb-md ml-neg-gutter mr-neg-gutter mr-auto-ns ml-auto-ns center hide-for-print"><div class="powa-wrapper" style="width: 100%; height: 0px; background-size: 100%; padding-bottom: 56.25%; background-color: rgb(245, 245, 245); background-image: url(&quot;https://www.washingtonpost.com/player/prod/img/wp_grey.jpg&quot;);"><div class="powa-sticky-stuck">
+
+        <div class="powa-sticky-stick">
+                <div class="powa-sticky-close">
+                    <span><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z" fill="#fff"></path></svg></span>
+                </div>
+            <div class="powa powa-processed large" data-org="wapo" data-ad-bar="1" data-aspect-ratio="0.5625" data-autoinit="false" data-autoplay="false" data-blurb="false" data-duration-or-live="true" data-playthrough="true" data-promo-video="true" data-uuid="5e44eaeb-7275-4856-a9fc-da37614d1a5b" data-viewport-autoplay="false" data-powa-index="0" data-iris="true" data-sticky="true" data-ad-preload="true" data-player-type="posttv-embed" data-ad-timeouts="{&quot;vastLoad&quot;:3,&quot;videoLoad&quot;:3,&quot;adStart&quot;:3}" data-controls="false" data-mobile-controls="false" data-device-class="deskweb" data-env="v/3.3.12-wapo.11.5" id="powa-5e44eaeb-7275-4856-a9fc-da37614d1a5b-0" tabindex="0" style="padding-bottom: 56.25%;" data-advertising="{&quot;adBar&quot;:true}" data-article-autoplay="false"><div class="powa-pane"><div class="powa-ys"><div class="powa-ys-window" aria-hidden="true">
+        <div class="powa-ys-field powa-ys-header">
+            <span class="powa-ys-title">Subtitle Settings</span>
+        </div>
+        <div class="powa-ys-field">
+            <label for="powa-ys-field-name" class="powa-ys-field-name">Font</label>
+            <select class="powa-ys-option powa-ys-option-large" data-option="font-family"><option value="Default">Default</option>
+<option value="'Andale Mono', 'Lucida Console', monospace">Mono Sans</option>
+<option value="'Courier New', monospace">Mono Serif</option>
+<option value="sans-serif">Sans</option>
+<option value="serif">Serif</option>
+<option value="'Comic Sans MS', Impact, fantasy">Comic</option>
+<option value="'Monotype Corsiva', cursive">Fancy</option>
+<option value="'Andale Mono', 'Lucida Console', monospace, sans-serif">Small Caps</option></select>
+        </div>
+        <div class="powa-ys-field">
+            <label for="powa-ys-field-name " class="powa-ys-field-name">Font Size</label>
+            <select class="powa-ys-option powa-ys-option-large" data-option="font-size"><option value="Default">Default</option>
+<option value="x-small">X-Small</option>
+<option value="small">Small</option>
+<option value="medium">Medium</option>
+<option value="large">Large</option>
+<option value="x-large">X-Large</option>
+<option value="xx-large">XX-Large</option></select>
+        </div>
+        <div class="powa-ys-field">
+            <label for="powa-ys-field-name class=" powa-ys-field-name"="">Font Edge</label>
+            <select class="powa-ys-option powa-ys-option-large" data-option="text-shadow"><option value="Default">Default</option>
+<option value="0 0 1px rgba(0, 0, 0, 0.5)">Outline Dark</option>
+<option value="0 0 2px rgba(255, 255, 255, 0.75)">Outline Light</option>
+<option value="0 0 1px rgba(0, 0, 0, 1)">Outline Dark Bold</option>
+<option value="0 0 2px rgba(255, 255, 255, 1)">Outline Light Bold</option>
+<option value="2px 2px 2px rgba(0, 0, 0, 0.5)">Shadow Dark</option>
+<option value="2px 2px 2px rgba(255, 255, 255, 0.5)">Shadow Light</option>
+<option value="2px 2px 2px rgba(0, 0, 0, 1)">Shadow Dark Bold</option>
+<option value="2px 2px 2px rgba(255, 255, 255, 1)">Shadow Light Bold</option></select>
+        </div>
+        <div class="powa-ys-field">
+            <label for="powa-ys-field-name class=" powa-ys-field-name"="">Font Color</label>
+            <select class="powa-ys-option powa-ys-option-small" data-option="color"><option value="Default">Default</option>
+<option value="0, 0, 0">Black</option>
+<option value="192, 192, 192">Silver</option>
+<option value="128, 128, 128">Gray</option>
+<option value="255, 255, 255">White</option>
+<option value="128, 0, 0">Maroon</option>
+<option value="255, 0, 0">Red</option>
+<option value="128, 0, 128">Purple</option>
+<option value="255, 0, 255">Fuchsia</option>
+<option value="0, 128, 0">Green</option>
+<option value="0, 255, 0">Lime</option>
+<option value="128, 128, 0">Olive</option>
+<option value="255, 255, 0">Yellow</option>
+<option value="0, 0, 128">Navy</option>
+<option value="0, 0, 255">Blue</option>
+<option value="0, 128, 128">Teal</option>
+<option value="0, 255, 255">Aqua</option>
+<option value="255, 165, 0">Orange</option></select>
+            <select class="powa-ys-option powa-ys-option-small" data-option="textOpacity"><option value="Default">Default</option>
+<option value="1.0">100%</option>
+<option value="0.75">75%</option>
+<option value="0.5">50%</option>
+<option value="0.25">25%</option>
+<option value="0">0%</option></select>
+        </div>
+        <div class="powa-ys-field">
+            <label for="powa-ys-field-name class=" powa-ys-field-name"="">Background</label>
+            <select class="powa-ys-option powa-ys-option-small" data-option="background"><option value="Default">Default</option>
+<option value="0, 0, 0">Black</option>
+<option value="192, 192, 192">Silver</option>
+<option value="128, 128, 128">Gray</option>
+<option value="255, 255, 255">White</option>
+<option value="128, 0, 0">Maroon</option>
+<option value="255, 0, 0">Red</option>
+<option value="128, 0, 128">Purple</option>
+<option value="255, 0, 255">Fuchsia</option>
+<option value="0, 128, 0">Green</option>
+<option value="0, 255, 0">Lime</option>
+<option value="128, 128, 0">Olive</option>
+<option value="255, 255, 0">Yellow</option>
+<option value="0, 0, 128">Navy</option>
+<option value="0, 0, 255">Blue</option>
+<option value="0, 128, 128">Teal</option>
+<option value="0, 255, 255">Aqua</option>
+<option value="255, 165, 0">Orange</option></select>
+            <select class="powa-ys-option powa-ys-option-small" data-option="backgroundOpacity"><option value="Default">Default</option>
+<option value="1.0">100%</option>
+<option value="0.75">75%</option>
+<option value="0.5">50%</option>
+<option value="0.25">25%</option>
+<option value="0">0%</option></select>
+        </div>
+    </div></div></div><div class="powa-shot">
+            <div class="powa-shot-image powa-click-promo-play" style="background-image: url('https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fd1i4t8bqe7zgj6.cloudfront.net%2F01-19-2021%2Ft_d89996157c9b44ac92f13664d69504c5_name_1___1920x1080___30p_00_00_14_23_Still016.jpg&amp;w=960')">
+                <div class="powa-shot-title franklin-light live-badge">Senate hearing to consider Alejandro Mayorkas as Biden's head of DHS</div>
+                <div class="powa-shot-live-badge franklin-light">LIVE</div>
+
+
+                    <div class="powa-shot-play-btn powa-click-promo-play wpv-center">
+                        <div class="powa-shot-btn-wrapper " style="">
+                            <svg class="powa-shot-play-icon powa-shot-click-play powa-shot-play-btn-icon powa-click-promo-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104">
+            <polygon fill="currentColor" points="23 13 89.183 50.82 23 91"></polygon>
+        </svg>
+                            <svg class="powa-shot-loading-icon powa-shot-click-play powa-shot-play-btn-icon powa-spin powa-click-promo-play" focusable="false" data-prefix="fas" data-icon="spinner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" style="display: none;">
+            <path fill="currentColor" d="M526 1394q0 53-37.5 90.5t-90.5 37.5q-52 0-90-38t-38-90q0-53 37.5-90.5t90.5-37.5 90.5 37.5 37.5 90.5zm498 206q0 53-37.5 90.5t-90.5 37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm-704-704q0 53-37.5 90.5t-90.5 37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm1202 498q0 52-38 90t-90 38q-53 0-90.5-37.5t-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm-964-996q0 66-47 113t-113 47-113-47-47-113 47-113 113-47 113 47 47 113zm1170 498q0 53-37.5 90.5t-90.5 37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm-640-704q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm530 206q0 93-66 158.5t-158 65.5q-93 0-158.5-65.5t-65.5-158.5q0-92 65.5-158t158.5-66q92 0 158 66t66 158z"></path>
+        </svg>
+
+                        </div>
+                    </div>
+
+                <div class="powa-shot-logo" data-logo=""></div>
+            </div>
+        </div><video class="powa-video" id="powa-player-5e44eaeb-7275-4856-a9fc-da37614d1a5b-0" playsinline="true" preload="metadata" controlslist="nodownload" crossorigin="anonymous" style="background-color: black; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="blob:https://www.washingtonpost.com/af4fd7f1-0370-461e-be19-5c7b434f236b"></video><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Senate hearing to consider Alejandro Mayorkas as Biden's head of DHS","description":"The Senate Homeland Security Committee meets to consider Alejandro Mayorkas's nomination as Secretary of Department of Homeland Security for President-elect Joe Biden's administration.","thumbnailUrl":"https://d1i4t8bqe7zgj6.cloudfront.net/01-19-2021/t_d89996157c9b44ac92f13664d69504c5_name_1___1920x1080___30p_00_00_14_23_Still016.jpg","uploadDate":"2021-01-19T14:45:00Z","embedUrl":"https://www.washingtonpost.com/video/c/embed/5e44eaeb-7275-4856-a9fc-da37614d1a5b","publication":[{"@type":"BroadcastEvent","isLiveBroadcast":true,"startDate":"2021-01-19T14:45:00Z","endDate":"2021-01-20T00:59:00Z"}]}</script><div class="powa-sub"></div><div class="powa-sell-bar powa-sell-bar-hidden">
+        <div class="powa-sell-bar-controls">
+            <button aria-label="Play/Pause" title="Play/Pause" class="powa-button powa-sell-bar-control powa-sell-bar-play-pause powa-click-play-pause-click">
+                <svg class="powa-sell-bar-play powa-sell-bar-hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104">
+            <polygon fill="currentColor" points="23 13 89.183 50.82 23 91"></polygon>
+        </svg>
+                <svg class="powa-sell-bar-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104">
+            <path fill="currentColor" d="M12,91 L12,13 L42,13 L42,91 L12,91 Z M62,91 L62,13 L92,13 L92,91 L62,91 Z"></path>
+        </svg>
+            </button>
+            <button aria-label="Volume" title="Volume" class="powa-button powa-sell-bar-control powa-sell-bar-mute-unmute powa-click-mute-unmute-click">
+                <svg class="powa-sell-bar-mute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path fill="currentColor" d="M9.66666667,12.6665333 L19,4.66653333 L19,28.6665333 L9.66666667,20.6665333 L3,20.6665333 L3,12.6665333 L9.66666667,12.6665333 Z M23.1116126,25.6465709 L22.7139874,23.6864958 C26.0253765,23.0147399 28.4434667,20.0889234 28.4434667,16.6665333 C28.4434667,13.2441432 26.0253765,10.3183267 22.7139874,9.64657085 L23.1116126,7.68649581 C27.3509537,8.54649811 30.4434667,12.288346 30.4434667,16.6665333 C30.4434667,21.0447207 27.3509537,24.7865686 23.1116126,25.6465709 Z M22.5866938,13.4119998 L23.2389062,11.5213335 C25.3455952,12.248066 26.8205888,14.1832132 26.9132641,16.4409811 C27.0142304,18.8609659 25.5017774,21.0228258 23.238619,21.8027655 L22.586981,19.9119012 C24.0231843,19.4169504 24.9787037,18.0511566 24.9149747,16.5236795 C24.8564099,15.0969204 23.9236857,13.8732143 22.5866938,13.4119998 Z"></path>
+        </svg>
+                <svg class="powa-sell-bar-unmute powa-sell-bar-hidden" focusable="false" data-prefix="fas" data-icon="volume-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path fill="currentColor" d="M215 71l-89 89H24a24 24 0 0 0-24 24v144a24 24 0 0 0 24 24h102.06L215 441c15 15 41 4.47 41-17V88c0-21.47-26-32-41-17z"></path>
+        </svg>
+            </button>
+        </div>
+        <span class="powa-sell-bar-countdown powa-sell-bar-hidden"></span>
+        <div class="powa-sell-bar-skip-container">
+            <span class="powa-sell-bar-skip-countdown powa-sell-bar-hidden"></span>
+            <span class="powa-sell-bar-skip powa-click-skip-click powa-sell-bar-hidden">Skip</span>
+        </div>
+    </div><div class="powa-sell" style="display: none;"><div id="powa-sell-ad-container-powa-5e44eaeb-7275-4856-a9fc-da37614d1a5b-0" style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px;"></div></div></div></div></div></div><figcaption class="mt-xs ml-gutter mr-gutter mr-auto-ns ml-auto-ns left gray-dark font--subhead font-xxxs" data-qa="video-caption">The Senate Homeland Security Committee meets to consider Alejandro Mayorkas's nomination to lead the department under President-elect Joe Biden. (Reuters)</figcaption></figure></div>

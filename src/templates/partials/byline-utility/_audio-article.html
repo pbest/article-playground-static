@@ -1,0 +1,40 @@
+<div id="test" data-qa="audio" class="jsx-3976294516 mb-sm mt-md">
+   <div class="overflow-hidden" data-sc-v="4.8.0-canary.0" data-sc-c="audio">
+      <div class="flex items-center justify-start audio-player-wrapper" data-sc-v="4.8.0-canary.0" data-sc-c="audio">
+         <button id="button" class="bg-gray-lighter flex items-center justify-center brad-50 mr-xs pointer" data-sc-v="4.8.0-canary.0" data-sc-c="audio" style="min-width: 32px; min-height: 32px;">
+            <svg class="content-box relative fill-black" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-label="Listen to article" data-sc-v="4.8.0-canary.0" data-sc-c="icon" style="width: 16px; height: 16px; left: 0px;">
+               <title data-sc-v="4.8.0-canary.0" data-sc-c="icon">headphones</title>
+               <path d="M8 2a6 6 0 0 1 6 6v4c0 1.55-1.37 2.75-3 2.75a1 1 0 0 1-1-1v-3.5a1 1 0 0 1 1.034-1l.19.008A3.14 3.14 0 0 1 13 9.949L13 8A5 5 0 0 0 3 8v1.948a3.163 3.163 0 0 1 2-.698 1 1 0 0 1 1 1v3.5a1 1 0 0 1-1.034 1l-.19-.008C3.24 14.64 2 13.472 2 12V8a6 6 0 0 1 6-6z" fill-rule="nonzero" data-sc-v="4.8.0-canary.0" data-sc-c="icon"></path>
+            </svg>
+         </button>
+         <div class="flex w-100 flex-row items-center" data-sc-v="4.8.0-canary.0" data-sc-c="audio">
+            <div id="label" role="button" tabindex="0" class="font-bold gray-darker mr-xs pointer" data-sc-v="4.8.0-canary.0" data-sc-c="audio" style="font-size: 16px; margin-bottom: 1px;">Listen to article</div>
+            <div class="flex items-center" data-sc-v="4.8.0-canary.0" data-sc-c="audio">
+               <div id="duration" class="gray-dark font-xxxxs" data-sc-v="4.8.0-canary.0" data-sc-c="audio">9 min</div>
+            </div>
+         </div>
+      </div>
+      <audio src="https://audio-articles.lionfish.media.aws.wapo.pub/prod/5FHPZZTP6ZGLPOZZYPPCURXXGI/20201207-135398.985/current.mp3" type="audio/mp3" preload="metadata" data-sc-v="4.8.0-canary.0" data-sc-c="audio">
+         <track kind="captions" label="English" data-sc-v="4.8.0-canary.0" data-sc-c="_ref3">
+      </audio>
+   </div>
+</div>
+
+<style>
+.audio-player-wrapper button, .audio-player-wrapper svg {
+    transition: all 250ms ease-in-out;
+}
+
+.audio-player-wrapper:hover {
+    cursor: pointer;
+    /* do we need to make "9 min" and/or the margin around Listen label clickable for this hover state to be honest? */
+}
+
+.audio-player-wrapper:hover button {
+    background: #2a2a2a;
+}
+
+.audio-player-wrapper:hover svg {
+    fill: #fff;
+}
+</style>
