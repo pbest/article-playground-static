@@ -1,24 +1,26 @@
 {% extends '_base.html' %}
+{% set isLive = false %}
 
     <!--Subnav-->
     {% block subnav %}
         {% include './partials/nav/subnav/_transfer-of-power.html' %}
     {% endblock %}
 
-
     <!--Header-->
     {% block header %}
-        {% include './partials/header/_standard.html' %}
-    {% endblock %}
+         {% include './partials/header/_live.html' %}
+     {% endblock %}
 
     <!-- Article-->
     {% block articleBody %}
+
         {% include './partials/lede-art/_image.html' %}
-        {% include './partials/byline/_simple.html' %}
-        {% include './partials/article-body/_simple.html' %}
+        {% include './partials/byline/_live-old.html' %}
+
+        {% include './partials/article-body/_live.html' %}
         {% include './partials/linkbox/_default.html' %}
         {% include './partials/author-bio/_single.html' %}
-        {% include './partials/bottom-of-article/_next-up.html' %}
+     <!--   {% include './partials/bottom-of-article/_next-up.html' %}-->
     {% endblock %}
 
     <!-- Right Rail -->
@@ -30,9 +32,6 @@
         {% include './partials/right-rail/_second-ad.html' %}
         {% include './partials/right-rail/_podcast.html' %}
     {% endblock %}
-
-
-
 
 
 {% block javascripts %}

@@ -1,0 +1,21 @@
+<div class="w-100" style="width:95%">
+
+    {% if isLive %}
+        {% include './kicker/_live.html' %}
+    {% else %}
+        {% include './kicker/_standard.html' %}
+    {% endif %}
+
+    <h1 class="font--headline gray-darkest null" data-qa="headline" style="padding-bottom:4px">
+        Trump departs D.C.; former presidents begin arriving at Capitol
+    </h1>
+
+    {% if isLive %}
+        <!-- Live Clickable -->
+        <h2 class="font--subhead font-light font-xs-ns font-xxs gray-dark mb-xxs mt-xs null pt-xs lh-lg" data-qa="subheadline"><span class="red">Latest: </span><a class="u-gray gray-darkest" href="#">Visitors arrive in D.C., only to watch festivities in a hotel room</a></h2>
+    {% else %}
+        <!-- Not Live -->
+        <h2 class="font--subhead font-light font-xs-ns font-xxs gray-dark mb-xxs-ns mb-sm mt-xs null pt-xs lh-lg" data-qa="subheadline">Here is a message about this file is not live.  <a class="u-gray gray-dark" href="#">Do this action</a> to see the latest news.</h2>
+    {% endif %}
+
+</div>

@@ -1,54 +1,38 @@
 {% extends '_base.html' %}
+{% set isLive = true %}
 
-{% block content %}
+    <!--Subnav-->
+    {% block subnav %}
+        {% include './partials/nav/subnav/_transfer-of-power.html' %}
+    {% endblock %}
 
+    <!--Header-->
+    {% block header %}
+         {% include './partials/header/_live.html' %}
+     {% endblock %}
 
+    <!-- Article-->
+    {% block articleBody %}
 
-    {% include './partials/nav/_topnav.html' %}
-    {% include './partials/ads/_leaderboard.html' %}
+        {% include './partials/lede-art/_image.html' %}
+        {% include './partials/byline/_live-old.html' %}
 
-     <div class="relative">
-            <main class="grid mr-auto ml-auto print-mt-none">
-                <header class="grid-item grid-item--cols-sm-12 grid-item--cols-md-12  grid-item--cols-lg-12" data-qa="main-full">
-                        {% include './partials/nav/subnav/_transfer-of-power.html' %}
+        {% include './partials/article-body/_live.html' %}
+        {% include './partials/linkbox/_default.html' %}
+        {% include './partials/author-bio/_single.html' %}
+     <!--   {% include './partials/bottom-of-article/_next-up.html' %}-->
+    {% endblock %}
 
-                    <div class="mt-lg mt-xl-ns">
-                            {% include './partials/kicker/_live.html' %}
-                    </div>
-                    <div class="w-100" style="width:95%">
-                        <h1 class="font--headline gray-darkest null" data-qa="headline">
-                            Trump departs D.C.; former presidents begin arriving at Capitol
-                        </h1>
-                       {% include './partials/subhead/_live-clickable.html' %}
-                    </div>
-                </header>
-                <article class="grid-item grid-item--cols-sm-12 grid-item--cols-md-12 b-l br-l mb-xxl-ns mt-xxs mt-md-l grid-item--cols-lg-9 pr-lg-lg" data-qa="main">
+    <!-- Right Rail -->
+    {% block rightRail %}
+        {% include './partials/right-rail/_sticky-ad.html' %}
+        {% include './partials/right-rail/_most-read.html' %}
+        {% include './partials/right-rail/_second-ad.html' %}
+        {% include './partials/right-rail/_newsletter.html' %}
+        {% include './partials/right-rail/_second-ad.html' %}
+        {% include './partials/right-rail/_podcast.html' %}
+    {% endblock %}
 
-                    {% include './partials/lede-art/_image.html' %}
-                    {% include './partials/byline/_live.html' %}
-
-                    {% include './partials/article-body/_live.html' %}
-                    {% include './partials/linkbox/_default.html' %}
-                    {% include './partials/author-bio/_single.html' %}
-                 <!--   {% include './partials/bottom-of-article/_next-up.html' %}-->
-                </article>
-                <aside class="grid-item grid-item--cols-sm-12 grid-item--cols-md-12 mt-md-l grid-item--cols-lg-3 hide-for-print flex flex-column right-rail">
-                    {% include './partials/right-rail/_sticky-ad.html' %}
-                    {% include './partials/right-rail/_most-read.html' %}
-                    {% include './partials/right-rail/_second-ad.html' %}
-                    {% include './partials/right-rail/_newsletter.html' %}
-                    {% include './partials/right-rail/_second-ad.html' %}
-                    {% include './partials/right-rail/_podcast.html' %}
-                </aside>
-            </main>
-
-            {% include './partials/footer/_standard.html' %}
-
-
-
-
-
-{% endblock %}
 
 {% block javascripts %}
 {{ super() }}
